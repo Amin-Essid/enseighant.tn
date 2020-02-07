@@ -21,7 +21,7 @@ class FilesProvider extends Component {
         levelName:"",
         subjectName:"",
         typeName:"",
-        url:"",
+        url:" ",
         finalFiles:[]
     };
 
@@ -74,7 +74,7 @@ class FilesProvider extends Component {
     }
 
     filterFiles = () => {
-        let url
+        let url = ""
         if(this.state.levelName !== '' && this.state.subjectName !== '' && this.state.typeName === ''){
             url = `/${this.state.levelName} ${this.state.subjectName}`;
         } else if(this.state.levelName !== '' && this.state.subjectName !== '' && this.state.typeName !== ''){
