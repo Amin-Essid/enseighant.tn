@@ -12,7 +12,6 @@ function FinalFilesContainer({sbj, fl}) {
 
     let URL = `/${sbj}/${fl}`;
     let files;
-    console.log(url);
 
     function isItUrl (Url){
         let count = 0;
@@ -25,7 +24,6 @@ function FinalFilesContainer({sbj, fl}) {
 
     let IsItUrl = isItUrl(url);
 
-    console.log(IsItUrl)
 
 
 

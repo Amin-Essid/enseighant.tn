@@ -25,6 +25,8 @@ class FilesProvider extends Component {
         finalFiles:[]
     };
 
+
+    //set the stite using the data
     componentDidMount(){
         let allFilesByLvl = items;
         let lvls = items.map(item => {
@@ -43,6 +45,8 @@ class FilesProvider extends Component {
     }
 
     //format Data
+
+
     formatSubjects(items) {
         let tempItems = items.map(item => {
             if (item==="arabic"){return "عربية"}
@@ -73,6 +77,7 @@ class FilesProvider extends Component {
         }, this.filterFiles)
     }
 
+    // format the url from the search bar
     filterFiles = () => {
         let url = ""
         if(this.state.levelName !== '' && this.state.subjectName !== '' && this.state.typeName === ''){
@@ -89,6 +94,8 @@ class FilesProvider extends Component {
     }
 
 
+
+    //find the data using the url
     findLevel = lnk => {
         let a = lnk.split(" ");
         let s = a[1];
